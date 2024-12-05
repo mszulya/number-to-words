@@ -116,6 +116,7 @@ export default React.memo(function Converter() {
                             marginTop: { xs: '10px', sm: '0' },
                             width: { xs: '100%', sm: 'auto' },
                             height: '56px',
+                            paddingX: '40px',
                         }}
                     >
                         Convert
@@ -129,6 +130,7 @@ export default React.memo(function Converter() {
                             marginTop: { xs: '10px', sm: '0' },
                             width: { xs: '100%', sm: 'auto' },
                             height: '56px',
+                            paddingX: '40px',
                         }}
                     >
                         Clear
