@@ -1,9 +1,12 @@
 import {Box, Button, TextField, Typography} from '@mui/material'
 import React, {FormEvent, useState} from 'react'
-import {styled} from '@mui/material/styles'
+import {styled, Theme} from '@mui/material/styles'
 
-const StyledTextField = styled(TextField)(() => ({
+const StyledTextField = styled(TextField)(({ theme }: { theme: Theme }) => ({
     width: '100%',
+    [theme.breakpoints.up('md')]: {
+        width: '600px',
+    },
     maxWidth: '600px',
     '& input[type=number]': {
         MozAppearance: 'textfield',
